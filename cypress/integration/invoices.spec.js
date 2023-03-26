@@ -5,7 +5,7 @@ import { API_URL, API_KEY, BASE_URL, resetDatabase } from "../utils";
 // Les fonctionnalités attendues pour les factures (invoices)
 describe("Invoices Features", () => {
   // Avant chaque test, je supprime tout ce qui se trouve dans la base de données distante via une requête HTTP
-  beforeEach(() => resetDatabase());
+  beforeEach( () => resetDatabase());
 
   // Testons que l'on peut bien créer une facture pour un client donné
   it("should create and list invoices for a customer", () => {
